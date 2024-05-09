@@ -1,0 +1,13 @@
+########## BASIC COMANDS OF KALI LINUX ##########
+
+cd -> navegar em diretorios
+ls -> listar
+mkdir -> criar novo diretorio
+touch -> criar arquivo vazio
+mv -> mover ou renomear, ex: mv arquivo destino / mv nome_antigo nome_novo
+tar -xvf -> descompactar
+tar -cvzf -> compactar
+cat -> ver arquivo txt
+nano -> editar arquivo txt
+sudo su -> enter as admin
+sudo service ... start -> ex: sudo service bluetooth start
