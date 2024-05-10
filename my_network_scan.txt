@@ -1,0 +1,9 @@
+########## SCAN OF MY NETWORK ##########
+
+netdiscover -i wlan0 -r 10.0.0.0/24 -> quem ta na rede, endereco de rede, endereco mac, talvez, nome do dispositivo
+nmap -sP <ip>/24 -> ip dispositivos
+nmap -sT <ip>/24 -> mostrar portas abertas, fechadas e filtradas
+nmap -sT -p 80,433 <ip>/24 -> mesmo que o de cima, mas o -p 80, 433 diz para pesquisar so entre as portas 80 e 433
+nmap -sS <ip>/24 -> verificacao menos intrusiva que a de cima, com o mesmo resultado
+nmap -O <ip> -> verificar SO tambem, mas em um ip especifico
+nmap -A <ip> -> a lot of more specific fuck things that odk what is, em um host especifico, aparentemente o melhorrede para que serve cada uma
